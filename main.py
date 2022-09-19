@@ -1,16 +1,9 @@
-# This is a sample Python script.
+from random import randrange
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+word_list = ['клопень', 'крендебобель', 'закавырка', 'студень', 'изподвоподверт', 'аквидук']
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+def get_word():  # возвращает случайное слово из списка word_list в верхнем регистре
+    return word_list[randrange(len(word_list))].upper()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+print(get_word())
