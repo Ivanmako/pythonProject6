@@ -1,9 +1,12 @@
-from random import randrange
+word = 'feftef'
 
-word_list = ['клопень', 'крендебобель', 'закавырка', 'студень', 'изподвоподверт', 'аквидук']
+word_completion = '_' * len(word)
+print(word_completion)
 
-def get_word(word):  # возвращает случайное слово из списка word_list в верхнем регистре
-    return word[randrange(len(word))].upper()
-
-
-print(get_word(word_list))
+bukva = 'f'
+if bukva in word:
+    for i in word:
+        if i == bukva:
+            print(bukva, sep='', end='')
+        else:
+            print('_', sep='', end='')
